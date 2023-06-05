@@ -1,0 +1,46 @@
+answer:
+  name: AAAA
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Quantity] [Order Date] [Order Date].daily [Category] [Order Date].'hour of day'"
+  answer_columns:
+  - name: Total Quantity
+  - name: Day(Order Date)
+  - name: Category
+  - name: HOUR_OF_DAY(Order Date)
+  table:
+    table_columns:
+    - column_id: Day(Order Date)
+      headline_aggregation: MIN-MAX
+    - column_id: Category
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: HOUR_OF_DAY(Order Date)
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Quantity
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Day(Order Date)
+    - Category
+    - HOUR_OF_DAY(Order Date)
+    - Total Quantity
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: LINE
+    chart_columns:
+    - column_id: Day(Order Date)
+    - column_id: Category
+    - column_id: HOUR_OF_DAY(Order Date)
+    - column_id: Total Quantity
+    axis_configs:
+    - x:
+      - Day(Order Date)
+      "y":
+      - Total Quantity
+      color:
+      - Category
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Day(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"HOUR_OF_DAY(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ed2b78d7-a712-434f-bc51-f0a38b609205\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"a080a812-6b6e-4f30-94f8-3a8d9156d342\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"mfgr#11\",\"color\": \"#2E75F0\"},{\"serieName\": \"mfgr#12\",\"color\": \"#48D1E0\"},{\"serieName\": \"mfgr#13\",\"color\": \"#FCC838\"},{\"serieName\": \"mfgr#14\",\"color\": \"#06BF7F\"},{\"serieName\": \"mfgr#15\",\"color\": \"#8C62F5\"},{\"serieName\": \"mfgr#21\",\"color\": \"#FF8142\"},{\"serieName\": \"mfgr#22\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mfgr#23\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mfgr#24\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mfgr#25\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mfgr#31\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mfgr#32\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mfgr#33\",\"color\": \"#2359B6\"},{\"serieName\": \"mfgr#34\",\"color\": \"#369FAA\"},{\"serieName\": \"mfgr#35\",\"color\": \"#BF982A\"},{\"serieName\": \"mfgr#41\",\"color\": \"#049160\"},{\"serieName\": \"mfgr#42\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mfgr#43\",\"color\": \"#C26232\"},{\"serieName\": \"mfgr#44\",\"color\": \"#71A1F4\"},{\"serieName\": \"mfgr#45\",\"color\": \"#82DFE9\"},{\"serieName\": \"mfgr#51\",\"color\": \"#FCD977\"},{\"serieName\": \"mfgr#52\",\"color\": \"#56D3A8\"},{\"serieName\": \"mfgr#53\",\"color\": \"#B094F8\"},{\"serieName\": \"mfgr#54\",\"color\": \"#FFA97E\"},{\"serieName\": \"mfgr#55\",\"color\": \"#163772\"}]}"
+  display_mode: CHART_MODE
