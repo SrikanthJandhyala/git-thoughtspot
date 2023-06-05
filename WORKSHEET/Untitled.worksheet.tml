@@ -9,7 +9,7 @@ worksheet:
     join_path:
     - {}
   worksheet_columns:
-  - name: Customer City
+  - name: Customer townn
     column_id: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter_1::Customer City
     properties:
       column_type: ATTRIBUTE
@@ -22,6 +22,10 @@ worksheet:
     properties:
       column_type: MEASURE
       aggregation: SUM
+  - name: Lineorder Custkey
+    column_id: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter_1::Lineorder CustKey
+    properties:
+      column_type: ATTRIBUTE
   properties:
     is_bypass_rls: false
     join_progressive: true
