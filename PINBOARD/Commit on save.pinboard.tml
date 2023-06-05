@@ -1,2 +1,46 @@
 liveboard:
   name: Commit on save
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Quantity by Day of month Order Date and Order Date
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Quantity] [Order Date].'day of month' [Order Date].'hour of day'"
+      answer_columns:
+      - name: Total Quantity
+      - name: DAY_OF_MONTH(Order Date)
+      - name: HOUR_OF_DAY(Order Date)
+      table:
+        table_columns:
+        - column_id: DAY_OF_MONTH(Order Date)
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: HOUR_OF_DAY(Order Date)
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Quantity
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - DAY_OF_MONTH(Order Date)
+        - HOUR_OF_DAY(Order Date)
+        - Total Quantity
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: DAY_OF_MONTH(Order Date)
+        - column_id: HOUR_OF_DAY(Order Date)
+        - column_id: Total Quantity
+        axis_configs:
+        - x:
+          - DAY_OF_MONTH(Order Date)
+          "y":
+          - Total Quantity
+          color:
+          - HOUR_OF_DAY(Order Date)
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"DAY_OF_MONTH(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"HOUR_OF_DAY(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3794c310-4b0a-42aa-844e-d70058cb50d1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"9c71b5eb-4e81-4ecb-967f-ac16da976614\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"DAY_OF_MONTH(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"0\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 288f8647-eafa-442e-aef8-24a47b2e2c53
