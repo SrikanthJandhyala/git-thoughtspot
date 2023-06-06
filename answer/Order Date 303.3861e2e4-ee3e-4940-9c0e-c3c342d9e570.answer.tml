@@ -1,0 +1,35 @@
+guid: 3861e2e4-ee3e-4940-9c0e-c3c342d9e570
+answer:
+  name: Order Date 303
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Quantity] [Order Date] [Order Date].daily"
+  answer_columns:
+  - name: Total Quantity
+  - name: Day(Order Date)
+  table:
+    table_columns:
+    - column_id: Day(Order Date)
+      headline_aggregation: MIN-MAX
+    - column_id: Total Quantity
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Day(Order Date)
+    - Total Quantity
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Day(Order Date)
+    - column_id: Total Quantity
+    axis_configs:
+    - x:
+      - Day(Order Date)
+      "y":
+      - Total Quantity
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Day(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a4265ba8-eafc-4554-a66b-70c178ee0529\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"370ce494-a498-45b3-8ae6-0898a233fb20\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#2770ef\"}]}"
+  display_mode: CHART_MODE
