@@ -1,6 +1,6 @@
 guid: 89d83dc5-d3fb-4ce1-b751-03570a8e1d6c
 worksheet:
-  name: work 1
+  name: work 1 update
   tables:
   - name: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter
     fqn: 540bf249-bed6-4867-be90-3fe09cba2049
@@ -16,6 +16,10 @@ worksheet:
       column_type: ATTRIBUTE
   - name: Customer Name
     column_id: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter_1::Customer Name
+    properties:
+      column_type: ATTRIBUTE
+  - name: Lineorder Custkey
+    column_id: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter_1::Lineorder CustKey
     properties:
       column_type: ATTRIBUTE
   properties:
