@@ -1,0 +1,20 @@
+guid: 8837bd64-7845-4a81-a610-c354033047cd
+view:
+  name: Total Quantity by Day of month Order Date
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Quantity] [Order Date].'day of month'"
+  view_columns:
+  - name: DAY_OF_MONTH(Order Date)
+    search_output_column: DAY_OF_MONTH(Order Date)
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      format_pattern: e
+  - name: Total Quantity
+    search_output_column: Total Quantity
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
