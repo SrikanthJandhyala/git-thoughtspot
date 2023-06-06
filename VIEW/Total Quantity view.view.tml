@@ -1,0 +1,37 @@
+view:
+  name: Total Quantity view
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Quantity] [Order Date].'day of month' [Order Date].'hour of day' [Order Date].'day of week' [Order Date].'day of year'"
+  view_columns:
+  - name: DAY_OF_MONTH(Order Date)
+    search_output_column: DAY_OF_MONTH(Order Date)
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      format_pattern: e
+  - name: HOUR_OF_DAY(Order Date)
+    search_output_column: HOUR_OF_DAY(Order Date)
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      format_pattern: k
+  - name: Day of Week(Order Date)
+    search_output_column: Day of Week(Order Date)
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      format_pattern: e
+  - name: DAY_OF_YEAR(Order Date)
+    search_output_column: DAY_OF_YEAR(Order Date)
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      format_pattern: j
+  - name: Total Quantity
+    search_output_column: Total Quantity
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
