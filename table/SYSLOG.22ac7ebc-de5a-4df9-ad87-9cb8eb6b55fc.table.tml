@@ -8,7 +8,7 @@ table:
     name: commit on save - connection
     fqn: 51b33bd9-9941-42b0-8438-da6eaf1b78d8
   columns:
-  - name: severity
+  - name: severity_jvb
     db_column_name: severity
     properties:
       column_type: ATTRIBUTE
