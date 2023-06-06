@@ -1,0 +1,23 @@
+guid: 12b48238-8cbf-45fe-90c4-6afe98f2b6e4
+worksheet:
+  name: work 2
+  tables:
+  - name: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter
+    fqn: 540bf249-bed6-4867-be90-3fe09cba2049
+  table_paths:
+  - id: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter_1
+    table: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter
+    join_path:
+    - {}
+  worksheet_columns:
+  - name: Customer City
+    column_id: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter_1::Customer City
+    properties:
+      column_type: ATTRIBUTE
+  - name: Lineorder Custkey
+    column_id: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter_1::Lineorder CustKey
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
