@@ -1,6 +1,6 @@
-guid: 25a8373c-9770-49de-b776-87e47256846d
+guid: 89d83dc5-d3fb-4ce1-b751-03570a8e1d6c
 worksheet:
-  name: www2
+  name: work 1
   tables:
   - name: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter
     fqn: 540bf249-bed6-4867-be90-3fe09cba2049
@@ -10,20 +10,14 @@ worksheet:
     join_path:
     - {}
   worksheet_columns:
+  - name: Customer City
+    column_id: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter_1::Customer City
+    properties:
+      column_type: ATTRIBUTE
   - name: Customer Name
     column_id: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter_1::Customer Name
     properties:
       column_type: ATTRIBUTE
-  - name: Total Discount
-    column_id: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter_1::Total Discount
-    properties:
-      column_type: MEASURE
-      aggregation: SUM
-  - name: Total Total Revenue
-    column_id: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter_1::Total Total Revenue
-    properties:
-      column_type: MEASURE
-      aggregation: SUM
   properties:
     is_bypass_rls: false
     join_progressive: true
