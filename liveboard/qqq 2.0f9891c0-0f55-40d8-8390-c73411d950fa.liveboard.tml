@@ -1,6 +1,6 @@
 guid: 0f9891c0-0f55-40d8-8390-c73411d950fa
 liveboard:
-  name: qqq
+  name: qqq 2
   visualizations:
   - id: Viz_1
     answer:
@@ -100,3 +100,9 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"DAY_OF_MONTH(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Day of Week(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"HOUR_OF_DAY(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0eb0a9c5-1b47-4bc5-98e9-e0d2c8258f76\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"8d081622-8e1e-4c32-b8ed-8c212be39bf7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"DAY_OF_MONTH(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"monday, 0\",\"color\": \"#2E75F0\"},{\"serieName\": \"tuesday, 0\",\"color\": \"#48D1E0\"},{\"serieName\": \"wednesday, 0\",\"color\": \"#FCC838\"},{\"serieName\": \"thursday, 0\",\"color\": \"#06BF7F\"},{\"serieName\": \"friday, 0\",\"color\": \"#8C62F5\"},{\"serieName\": \"saturday, 0\",\"color\": \"#FF8142\"},{\"serieName\": \"sunday, 0\",\"color\": \"#ABC7F9\"}]}"
       display_mode: CHART_MODE
     viz_guid: 1833f0c4-644e-43a7-bce3-34585062f103
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM
+    - visualization_id: Viz_2
+      size: MEDIUM
