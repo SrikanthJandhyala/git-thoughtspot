@@ -183,7 +183,7 @@ table:
       column_type: ATTRIBUTE
     db_column_properties:
       data_type: VARCHAR
-  - name: transaction.id
+  - name: transaction.id_up
     db_column_name: transaction.id
     properties:
       column_type: ATTRIBUTE
