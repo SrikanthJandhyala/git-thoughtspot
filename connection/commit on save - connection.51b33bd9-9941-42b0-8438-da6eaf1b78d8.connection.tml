@@ -1,0 +1,19 @@
+guid: 51b33bd9-9941-42b0-8438-da6eaf1b78d8
+connection:
+  name: commit on save - connection
+  type: RDBMS_SNOWFLAKE
+  authentication_type: SERVICE_ACCOUNT
+  properties:
+  - key: accountName
+    value: thoughtspot-dev
+  - key: user
+    value: SPOTAPP
+  - key: password
+    value: ""
+  - key: role
+    value: SYSADMIN
+  - key: warehouse
+    value: DEV_WH_SPOTAPPS
+  - key: database
+    value: SPOTAPPS_DB
+  description: ""
