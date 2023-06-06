@@ -10,16 +10,8 @@ worksheet:
     join_path:
     - {}
   worksheet_columns:
-  - name: Customer City
-    column_id: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter_1::Customer City
-    properties:
-      column_type: ATTRIBUTE
   - name: Customer Name
     column_id: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter_1::Customer Name
-    properties:
-      column_type: ATTRIBUTE
-  - name: Lineorder Custkey
-    column_id: Aggr_WS_On_Table_AggrWs_Chasm_Join_With_Filter_1::Lineorder CustKey
     properties:
       column_type: ATTRIBUTE
   - name: Total Discount
