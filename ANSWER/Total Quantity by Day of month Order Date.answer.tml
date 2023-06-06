@@ -1,0 +1,35 @@
+guid: ad7cd0f1-31b9-47e3-a322-f4f728e26eb1
+answer:
+  name: Total Quantity by Day of month Order Date
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Quantity] [Order Date].'day of month'"
+  answer_columns:
+  - name: Total Quantity
+  - name: DAY_OF_MONTH(Order Date)
+  table:
+    table_columns:
+    - column_id: DAY_OF_MONTH(Order Date)
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Quantity
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - DAY_OF_MONTH(Order Date)
+    - Total Quantity
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: LINE
+    chart_columns:
+    - column_id: DAY_OF_MONTH(Order Date)
+    - column_id: Total Quantity
+    axis_configs:
+    - x:
+      - DAY_OF_MONTH(Order Date)
+      "y":
+      - Total Quantity
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"DAY_OF_MONTH(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"83ce07a1-0d93-47bf-8973-9b34fd738fbf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"945e1367-182e-48a5-b462-465db198b024\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"DAY_OF_MONTH(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#48D1E0\"}]}"
+  display_mode: CHART_MODE
