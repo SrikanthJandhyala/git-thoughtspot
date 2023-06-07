@@ -1,0 +1,48 @@
+guid: 0ecc0fab-8447-49e4-9f15-3fe5553ad788
+answer:
+  name: Total Quantity-updated
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Quantity] [Order Date].'day of month' [Order Date].'day of week' [Order Date].'hour of day'"
+  answer_columns:
+  - name: Total Quantity
+  - name: DAY_OF_MONTH(Order Date)
+  - name: Day of Week(Order Date)
+  - name: HOUR_OF_DAY(Order Date)
+  table:
+    table_columns:
+    - column_id: DAY_OF_MONTH(Order Date)
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Day of Week(Order Date)
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: HOUR_OF_DAY(Order Date)
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Quantity
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - DAY_OF_MONTH(Order Date)
+    - Day of Week(Order Date)
+    - HOUR_OF_DAY(Order Date)
+    - Total Quantity
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: LINE
+    chart_columns:
+    - column_id: DAY_OF_MONTH(Order Date)
+    - column_id: Day of Week(Order Date)
+    - column_id: HOUR_OF_DAY(Order Date)
+    - column_id: Total Quantity
+    axis_configs:
+    - x:
+      - DAY_OF_MONTH(Order Date)
+      "y":
+      - Total Quantity
+      color:
+      - Day of Week(Order Date)
+      - HOUR_OF_DAY(Order Date)
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"DAY_OF_MONTH(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Day of Week(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"HOUR_OF_DAY(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0eb0a9c5-1b47-4bc5-98e9-e0d2c8258f76\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"8d081622-8e1e-4c32-b8ed-8c212be39bf7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"DAY_OF_MONTH(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"monday, 0\",\"color\": \"#2E75F0\"},{\"serieName\": \"tuesday, 0\",\"color\": \"#48D1E0\"},{\"serieName\": \"wednesday, 0\",\"color\": \"#FCC838\"},{\"serieName\": \"thursday, 0\",\"color\": \"#06BF7F\"},{\"serieName\": \"friday, 0\",\"color\": \"#8C62F5\"},{\"serieName\": \"saturday, 0\",\"color\": \"#FF8142\"},{\"serieName\": \"sunday, 0\",\"color\": \"#ABC7F9\"}]}"
+  display_mode: CHART_MODE
