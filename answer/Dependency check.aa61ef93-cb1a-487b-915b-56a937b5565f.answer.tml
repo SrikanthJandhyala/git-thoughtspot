@@ -1,0 +1,33 @@
+guid: aa61ef93-cb1a-487b-915b-56a937b5565f
+answer:
+  name: Dependency check
+  tables:
+  - id: Untitled
+    name: Untitled
+    fqn: f5eb1989-ed4f-45d8-bf6b-29544a589329
+  search_query: "[Customer City] [Total Discount]"
+  answer_columns:
+  - name: Customer City
+  - name: Total Total Discount
+  table:
+    table_columns:
+    - column_id: Customer City
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Total Discount
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Customer City
+    - Total Total Discount
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Customer City
+    - column_id: Total Total Discount
+    axis_configs:
+    - "y":
+      - Total Total Discount
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Customer City\",\"columnProperty\": {}},{\"columnId\": \"Total Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c146ef32-7af3-4583-8df7-af3bea36961e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Total Discount\"],\"isOpposite\": false}},{\"id\": \"da28635f-4377-42a5-b3e2-929cdf0aa1d5\",\"properties\": {\"axisType\": \"X\"}}]}"
+  display_mode: TABLE_MODE
