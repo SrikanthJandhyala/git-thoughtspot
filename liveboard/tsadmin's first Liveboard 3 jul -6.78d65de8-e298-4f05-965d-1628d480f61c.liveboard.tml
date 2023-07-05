@@ -4,7 +4,7 @@ liveboard:
   visualizations:
   - id: Viz_1
     answer:
-      name: 5 - Total Tax by Monthly Order Date and Size
+      name: 7- Total Tax by Monthly Order Date and Size
       tables:
       - id: Parameters WS
         name: Parameters WS
