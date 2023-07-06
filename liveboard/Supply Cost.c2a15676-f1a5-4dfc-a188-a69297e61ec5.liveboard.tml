@@ -1,0 +1,40 @@
+guid: c2a15676-f1a5-4dfc-a188-a69297e61ec5
+liveboard:
+  name: Supply Cost
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Supply Cost by Quarterly Order Date
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Order Date] [Order Date].quarterly [Supply Cost]"
+      answer_columns:
+      - name: Quarter(Order Date)
+      - name: Total Supply Cost
+      table:
+        table_columns:
+        - column_id: Quarter(Order Date)
+          headline_aggregation: MIN-MAX
+        - column_id: Total Supply Cost
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Quarter(Order Date)
+        - Total Supply Cost
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Quarter(Order Date)
+        - column_id: Total Supply Cost
+        axis_configs:
+        - x:
+          - Quarter(Order Date)
+          "y":
+          - Total Supply Cost
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Supply Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a69dda81-5102-4392-889c-5927ee07e005\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Supply Cost\"],\"isOpposite\": false}},{\"id\": \"f4a4bc54-3ae7-424e-8a9e-895e325ef4b8\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Supply Cost\",\"color\": \"#2770ef\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: d5509509-22e0-42c7-bb7a-1b6d9a936327
