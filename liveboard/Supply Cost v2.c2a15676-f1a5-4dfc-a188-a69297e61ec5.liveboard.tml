@@ -4,7 +4,7 @@ liveboard:
   visualizations:
   - id: Viz_1
     answer:
-      name: Total Supply Cost by Quarterly Order Date
+      name: 3 - Total Supply Cost by Quarterly Order Date
       tables:
       - id: Parameters WS
         name: Parameters WS
