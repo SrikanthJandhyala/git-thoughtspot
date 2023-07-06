@@ -1,6 +1,6 @@
 guid: c2a15676-f1a5-4dfc-a188-a69297e61ec5
 liveboard:
-  name: Supply Cost
+  name: Supply Cost v2
   visualizations:
   - id: Viz_1
     answer:
@@ -38,3 +38,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Supply Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a69dda81-5102-4392-889c-5927ee07e005\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Supply Cost\"],\"isOpposite\": false}},{\"id\": \"f4a4bc54-3ae7-424e-8a9e-895e325ef4b8\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Supply Cost\",\"color\": \"#2770ef\"}]}"
       display_mode: CHART_MODE
     viz_guid: d5509509-22e0-42c7-bb7a-1b6d9a936327
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: SMALL
