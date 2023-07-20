@@ -1,0 +1,45 @@
+guid: 007a6731-1f45-4e8b-998b-0ea1b1d239e4
+worksheet:
+  name: JIRA_ISSUES_W
+  tables:
+  - name: JIRA_ISSUES
+    fqn: b742b7f1-85e2-4f5d-b846-383ee34ca1e0
+  table_paths:
+  - id: JIRA_ISSUES_1
+    table: JIRA_ISSUES
+    join_path:
+    - {}
+  worksheet_columns:
+  - name: Id
+    column_id: JIRA_ISSUES_1::ID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Project Name
+    column_id: JIRA_ISSUES_1::PROJECT_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: Project Key
+    column_id: JIRA_ISSUES_1::PROJECT_KEY
+    properties:
+      column_type: ATTRIBUTE
+  - name: Key
+    column_id: JIRA_ISSUES_1::KEY
+    properties:
+      column_type: ATTRIBUTE
+  - name: Issue Type Name
+    column_id: JIRA_ISSUES_1::ISSUE_TYPE_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: Status Name
+    column_id: JIRA_ISSUES_1::STATUS_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: Priority Name
+    column_id: JIRA_ISSUES_1::PRIORITY_NAME
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
