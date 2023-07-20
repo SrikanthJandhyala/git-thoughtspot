@@ -4,42 +4,6 @@ liveboard:
   visualizations:
   - id: Viz_1
     answer:
-      name: "Issue Type Name, Status Name"
-      tables:
-      - id: JIRA_ISSUES_W
-        name: JIRA_ISSUES_W
-        fqn: 007a6731-1f45-4e8b-998b-0ea1b1d239e4
-      search_query: "[Issue Type Name] [Status Name]"
-      answer_columns:
-      - name: Issue Type Name
-      - name: Status Name
-      table:
-        table_columns:
-        - column_id: Issue Type Name
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Status Name
-          headline_aggregation: COUNT_DISTINCT
-        ordered_column_ids:
-        - Issue Type Name
-        - Status Name
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Issue Type Name\",\"columnProperty\": {}},{\"columnId\": \"Status Name\",\"columnProperty\": {}}]}"
-      chart:
-        type: SCATTER
-        chart_columns:
-        - column_id: Issue Type Name
-        - column_id: Status Name
-        axis_configs:
-        - x:
-          - Issue Type Name
-          "y":
-          - Status Name
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Issue Type Name\",\"columnProperty\": {}},{\"columnId\": \"Status Name\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ccf60dfd-e5b3-4b05-9d36-fb5730057ff3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Status Name\"],\"isOpposite\": false}},{\"id\": \"0be93790-b9ec-4e34-b95b-e9ae0804922c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Issue Type Name\"]}}]}"
-      display_mode: TABLE_MODE
-    viz_guid: 5cbb324a-85d4-40a2-b5b8-2d11733c883e
-  - id: Viz_2
-    answer:
       name: Total Id by Priority Name
       tables:
       - id: JIRA_ISSUES_W
@@ -71,6 +35,10 @@ liveboard:
           "y":
           - Total Id
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Priority Name\",\"columnProperty\": {}},{\"columnId\": \"Total Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7ff229af-421c-4436-a4b9-93d69ff53d6d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Id\"],\"isOpposite\": false}},{\"id\": \"61266e4c-8822-4481-8dcd-d3471dbbd591\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Priority Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Id\",\"color\": \"#FF8142\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Priority Name\",\"columnProperty\": {}},{\"columnId\": \"Total Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7ff229af-421c-4436-a4b9-93d69ff53d6d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Id\"],\"isOpposite\": false}},{\"id\": \"61266e4c-8822-4481-8dcd-d3471dbbd591\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Priority Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Id\",\"color\": \"#FF8142\"}],\"tooltipConfig\": {}}"
       display_mode: TABLE_MODE
     viz_guid: 66cfa2e6-e1a9-452f-80fc-e1ac909167b8
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: LARGE
