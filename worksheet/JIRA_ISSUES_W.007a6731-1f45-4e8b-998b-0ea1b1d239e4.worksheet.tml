@@ -24,10 +24,6 @@ worksheet:
     column_id: JIRA_ISSUES_1::PROJECT_KEY
     properties:
       column_type: ATTRIBUTE
-  - name: Key
-    column_id: JIRA_ISSUES_1::KEY
-    properties:
-      column_type: ATTRIBUTE
   - name: Issue Type Name
     column_id: JIRA_ISSUES_1::ISSUE_TYPE_NAME
     properties:
