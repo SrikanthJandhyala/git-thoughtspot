@@ -4,34 +4,29 @@ liveboard:
   visualizations:
   - id: Viz_1
     answer:
-      name: Total Id by Resolution Name and Issue Type Name
+      name: Total Id by Resolution Name
       tables:
       - id: Jira Issues
         name: Jira Issues
         fqn: de3df679-d35c-43f7-9de1-4642e7cab227
-      search_query: "[Issue Type Name] [Resolution Name] [Id]"
+      search_query: "[Resolution Name] [Id]"
       answer_columns:
-      - name: Issue Type Name
       - name: Resolution Name
       - name: Total Id
       table:
         table_columns:
-        - column_id: Issue Type Name
-          headline_aggregation: COUNT_DISTINCT
         - column_id: Resolution Name
           headline_aggregation: COUNT_DISTINCT
         - column_id: Total Id
           headline_aggregation: SUM
         ordered_column_ids:
-        - Issue Type Name
         - Resolution Name
         - Total Id
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
-        type: STACKED_COLUMN
+        type: COLUMN
         chart_columns:
-        - column_id: Issue Type Name
         - column_id: Resolution Name
         - column_id: Total Id
         axis_configs:
@@ -39,10 +34,8 @@ liveboard:
           - Resolution Name
           "y":
           - Total Id
-          color:
-          - Issue Type Name
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Issue Type Name\",\"columnProperty\": {}},{\"columnId\": \"Resolution Name\",\"columnProperty\": {}},{\"columnId\": \"Total Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"eaaa9ec9-bc40-489a-a071-aa3e3b4dff2f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Id\"],\"isOpposite\": false}},{\"id\": \"dd915356-449c-4a40-b2d7-275fb3ec3c82\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Resolution Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"bug\",\"color\": \"#B094F8\"},{\"serieName\": \"epic\",\"color\": \"#8C62F5\"},{\"serieName\": \"feature\",\"color\": \"#56D3A8\"},{\"serieName\": \"incident\",\"color\": \"#06BF7F\"},{\"serieName\": \"initiative\",\"color\": \"#FCD977\"},{\"serieName\": \"patch sub-task\",\"color\": \"#FCC838\"},{\"serieName\": \"story\",\"color\": \"#82DFE9\"},{\"serieName\": \"sub-task\",\"color\": \"#48D1E0\"},{\"serieName\": \"task\",\"color\": \"#2359B6\"},{\"serieName\": \"technical debt\",\"color\": \"#71A1F4\"},{\"serieName\": \"test\",\"color\": \"#2E75F0\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Resolution Name\",\"columnProperty\": {}},{\"columnId\": \"Total Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"eaaa9ec9-bc40-489a-a071-aa3e3b4dff2f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Id\"],\"isOpposite\": false}},{\"id\": \"dd915356-449c-4a40-b2d7-275fb3ec3c82\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Resolution Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"bug\",\"color\": \"#B094F8\"},{\"serieName\": \"epic\",\"color\": \"#8C62F5\"},{\"serieName\": \"feature\",\"color\": \"#56D3A8\"},{\"serieName\": \"incident\",\"color\": \"#06BF7F\"},{\"serieName\": \"initiative\",\"color\": \"#FCD977\"},{\"serieName\": \"patch sub-task\",\"color\": \"#FCC838\"},{\"serieName\": \"story\",\"color\": \"#82DFE9\"},{\"serieName\": \"sub-task\",\"color\": \"#48D1E0\"},{\"serieName\": \"task\",\"color\": \"#2359B6\"},{\"serieName\": \"technical debt\",\"color\": \"#71A1F4\"},{\"serieName\": \"test\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Id\",\"color\": \"#FF8142\"}]}"
       display_mode: CHART_MODE
     viz_guid: 74e14485-89f6-4d8d-98dd-6137b1acf62c
   - id: Viz_2
