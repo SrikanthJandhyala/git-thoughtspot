@@ -1,0 +1,29 @@
+guid: de3df679-d35c-43f7-9de1-4642e7cab227
+worksheet:
+  name: Jira Issues
+  tables:
+  - name: JIRA_ISSUES
+    fqn: b742b7f1-85e2-4f5d-b846-383ee34ca1e0
+  table_paths:
+  - id: JIRA_ISSUES_1
+    table: JIRA_ISSUES
+    join_path:
+    - {}
+  worksheet_columns:
+  - name: Id
+    column_id: JIRA_ISSUES_1::ID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Resolution Name
+    column_id: JIRA_ISSUES_1::RESOLUTION_NAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: Resolution Description
+    column_id: JIRA_ISSUES_1::RESOLUTION_DESCRIPTION
+    properties:
+      column_type: ATTRIBUTE
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
