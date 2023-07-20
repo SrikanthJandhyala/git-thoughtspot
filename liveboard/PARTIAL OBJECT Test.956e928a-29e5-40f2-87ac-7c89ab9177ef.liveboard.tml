@@ -4,43 +4,38 @@ liveboard:
   visualizations:
   - id: Viz_1
     answer:
-      name: "Issue Type Name, Key, Status Name"
+      name: "Issue Type Name, Status Name"
       tables:
       - id: JIRA_ISSUES_W
         name: JIRA_ISSUES_W
         fqn: 007a6731-1f45-4e8b-998b-0ea1b1d239e4
-      search_query: "[Issue Type Name] [Key] [Status Name]"
+      search_query: "[Issue Type Name] [Status Name]"
       answer_columns:
       - name: Issue Type Name
-      - name: Key
       - name: Status Name
       table:
         table_columns:
         - column_id: Issue Type Name
           headline_aggregation: COUNT_DISTINCT
-        - column_id: Key
-          headline_aggregation: COUNT_DISTINCT
         - column_id: Status Name
           headline_aggregation: COUNT_DISTINCT
         ordered_column_ids:
         - Issue Type Name
-        - Key
         - Status Name
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Issue Type Name\",\"columnProperty\": {}},{\"columnId\": \"Status Name\",\"columnProperty\": {}}]}"
       chart:
         type: SCATTER
         chart_columns:
         - column_id: Issue Type Name
-        - column_id: Key
         - column_id: Status Name
         axis_configs:
         - x:
-          - Status Name
-          "y":
-          - Key
-          color:
           - Issue Type Name
+          "y":
+          - Status Name
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Issue Type Name\",\"columnProperty\": {}},{\"columnId\": \"Status Name\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ccf60dfd-e5b3-4b05-9d36-fb5730057ff3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Status Name\"],\"isOpposite\": false}},{\"id\": \"0be93790-b9ec-4e34-b95b-e9ae0804922c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Issue Type Name\"]}}]}"
       display_mode: TABLE_MODE
     viz_guid: 5cbb324a-85d4-40a2-b5b8-2d11733c883e
   - id: Viz_2
