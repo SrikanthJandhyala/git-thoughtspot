@@ -43,3 +43,39 @@ liveboard:
         client_state: ""
       display_mode: TABLE_MODE
     viz_guid: 5cbb324a-85d4-40a2-b5b8-2d11733c883e
+  - id: Viz_2
+    answer:
+      name: Total Id by Priority Name
+      tables:
+      - id: JIRA_ISSUES_W
+        name: JIRA_ISSUES_W
+        fqn: 007a6731-1f45-4e8b-998b-0ea1b1d239e4
+      search_query: "[Id] [Priority Name]"
+      answer_columns:
+      - name: Total Id
+      - name: Priority Name
+      table:
+        table_columns:
+        - column_id: Priority Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Id
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Priority Name
+        - Total Id
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Priority Name
+        - column_id: Total Id
+        axis_configs:
+        - x:
+          - Priority Name
+          "y":
+          - Total Id
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Priority Name\",\"columnProperty\": {}},{\"columnId\": \"Total Id\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7ff229af-421c-4436-a4b9-93d69ff53d6d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Id\"],\"isOpposite\": false}},{\"id\": \"61266e4c-8822-4481-8dcd-d3471dbbd591\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Priority Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Id\",\"color\": \"#FF8142\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 66cfa2e6-e1a9-452f-80fc-e1ac909167b8
