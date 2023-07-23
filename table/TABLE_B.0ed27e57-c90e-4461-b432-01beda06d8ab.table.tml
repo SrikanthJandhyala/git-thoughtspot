@@ -1,0 +1,38 @@
+guid: 0ed27e57-c90e-4461-b432-01beda06d8ab
+table:
+  name: TABLE_B
+  db: SUPPLYCHAIN_MAIN
+  schema: DBT
+  db_table: TABLE_B
+  connection:
+    name: SnowflakeConnection
+    fqn: 46030ea3-ecba-4cbf-a02c-c2ef5d5f29f1
+  columns:
+  - name: ID
+    db_column_name: ID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: NAME
+    db_column_name: NAME
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: AGE
+    db_column_name: AGE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: PROFESSION
+    db_column_name: PROFESSION
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR

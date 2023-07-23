@@ -1,0 +1,18 @@
+guid: 3873281a-8c4f-4be9-87bd-04575e7bfcd6
+table:
+  name: MY_FIRST_DBT_MODEL
+  db: SUPPLYCHAIN_MAIN
+  schema: DBT
+  db_table: MY_FIRST_DBT_MODEL
+  connection:
+    name: SnowflakeConnection
+    fqn: 46030ea3-ecba-4cbf-a02c-c2ef5d5f29f1
+  columns:
+  - name: ID
+    db_column_name: ID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
